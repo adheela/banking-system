@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/user.css">  
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<script>
+    function grab(){
+
+$.ajax({
+            method: 'GET',
+            url: 'http://localhost/banking-system/php/user.php',
+            dataType: 'json',
+        }).done(function (data) {
+            console.log(data);
+        $.map(data, function (post, i) {
+
+    $('tbody').append('<tr>'+
+        '<td>'+ post.uid +'</td>'+
+        '<td>'+post.name + '</div></td>'+
+        '<td>'+ post.email +'</td>'+
+        '<td>₹ '+post.balance + '</td>'+
+    '</tr>');
+    
+    });
+});
+}
+</script>
+
+<body onload="grab()">
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://i.postimg.cc/jqy5rsXs/circle-cropped-2.png" alt="">
+        </div>
+<ul class="nav-area">
+<li><a href="../html/user.html">User List</a></li>
+<li><a href="../html/home.html">Home</a></li>
+</ul>
+</div>
+<div class="welcome-text">
+    <table id="user">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>Balance</th>
+              </tr>
+        </thead>
+        <tbody >
+        </tbody>
+        </table>
+           
+    </div>
+</header>
+</body>
+</html>

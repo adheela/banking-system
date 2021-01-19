@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/cJMh8GYf/bank.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: none;
+	color: rgb(221, 245, 7);
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	/* position: absolute; */
+	/* width: 600px;
+	height: 200px;*/
+	padding: 5%;
+	text-align: center;
+}
+
+#user {
+	font-family: Comfortaa;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #user td, #user th {
+	border: 2px solid #ddd;
+	padding: 8px;
+  }
+  
+  #user tr{background-color: #ddd;}
+  
+  #user tr:hover {background-color: whitesmoke;}
+  
+  #user th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: wheat;
+	color: black;
+  }
+

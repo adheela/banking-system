@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/send-money.css">    
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://i.postimg.cc/jqy5rsXs/circle-cropped-2.png" alt="">
+        </div>
+<ul class="nav-area">
+<li><a href="../html/user.html">User List</a></li>
+<li><a href="../html/home.html">Home</a></li>
+</ul>
+</div>
+
+<div class="container">
+    <form action="../php/transfer.php" method="GET">
+        <label><b>Sender </b></label>
+        <input list="names" type="text" autocomplete="off" name="sender_name", placeholder="Enter name here" required>
+        <datalist id="names">
+            <option value="Salman"></option>
+            <option value="Kiara"></option>
+            <option value="Shahrukh"></option>
+            <option value="Priyanka"></option>
+            <option value="Shahid"></option>
+            <option value="Ranbir"></option>
+            <option value="Deepika"></option>
+            <option value="Juhi"></option>
+            <option value="Nick"></option>
+            <option value="Taapsee"></option>
+            
+        </datalist>
+    </br>
+        <label><b>Receiver </b></label>
+        <input list="namess" type="text" autocomplete="off" name="receiver_name" placeholder="Enter name here" required>
+        <datalist id="namess">
+            <option value="Salman"></option>
+            <option value="Kiara"></option>
+            <option value="Shahrukh"></option>
+            <option value="Priyanka"></option>
+            <option value="Shahid"></option>
+            <option value="Ranbir"></option>
+            <option value="Deepika"></option>
+            <option value="Juhi"></option>
+            <option value="Nick"></option>
+            <option value="Taapsee"></option>
+            
+        </datalist>
+    </br>
+        <label><b>Amount </b></label>
+        <input type="" name="amount" placeholder="Enter amount here" required>
+        <input class="click" onclick="toast()" type="submit" name="" value="Send Money">
+    </form>
+</div>
+</header>
+
+</body>
+</html>
+
